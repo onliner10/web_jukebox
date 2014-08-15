@@ -1,0 +1,1 @@
+@funModule = angular.module('funModule', [])

@@ -1,0 +1,10 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "home";
+
+body{
+	padding:50px 80px;
+	background-image:image-url('vinyl-wallpaper.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}

@@ -1,0 +1,40 @@
+<div class="col-md-8" >	
+	<div ng-controller="HomeController" data-ng-init="search()" class="panel panel-default" >
+		<input type="text" id="search_form" style="width:100%" ng-model="query" ng-change="search()"></input>
+
+		<ul class="list-group" style="margin-top:10px;">
+			<li id="{{result.id}}" ng-repeat="result in search_results" class="list-group-item">
+				<a href="javascript::void()" ng-click="preview_video(result.id)">{{result.title}}</a>
+
+				<div ng-bind-html="result.preview_html"></div>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="col-md-4">
+	<div class="panel panel-default" >
+		<h4>Playing next</h4>
+		<div class="media">
+			<a class="pull-left" href="#">
+				<img class="media-object" src="http://www.musicaltoronto.org/wp-content/uploads/2014/06/mozart1.jpg" style="width:64px;height:64px;" alt="...">
+			</a>
+			<div class="media-body">
+				<h4 class="media-heading">Michael Meets Mozart - 1 Piano, 2 Guys, 100 Cello Tracks - ThePianoGuys</h4>
+				14 votes
+			</div>
+
+		</div>
+
+		<div class="media">
+			<a class="pull-left" href="#">
+				<img class="media-object" src="http://klubbunkier.pl/wp-content/uploads/2014/06/lady-gaga.jpg" style="width:64px;height:64px;" alt="...">
+			</a>
+			<div class="media-body">
+				<h4 class="media-heading">Lady Gaga - Bad Romance</h4>
+				1 votes
+			</div>
+			
+		</div>
+
+	</div>
+</div>
