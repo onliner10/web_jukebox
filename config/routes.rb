@@ -55,4 +55,7 @@ Rails.application.routes.draw do
   #   end
 
   root 'home#index'
+  post 'jukebox/vote', to: 'jukebox#vote'
+  get 'jukebox/take', to: 'jukebox#take'
+  get 'jukebox/reset', to: 'jukebox#reset'
 end
